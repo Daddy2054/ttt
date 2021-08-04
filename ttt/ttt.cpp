@@ -43,7 +43,7 @@ int main() {
                 if (win_check(board, player1_marker)) {
                     cout << "Player 1 WON!!!\n";
                     break;
-                }   
+            }
                 //continue;
             }
             else {
@@ -56,11 +56,11 @@ int main() {
                     break;
                 }
             }
-            if (full_board_check(board)) {
-                cout << "No one won.\n";
-                game_on = false;
+                if (full_board_check(board)) {
+                    cout << "No one won.\n";
+                    game_on = false;
+                }
             }
-        }
 
         if (!replay()) {
             break;
